@@ -1,0 +1,47 @@
+/* Home Page Styling */
+
+.home-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #bbdefb, #e3f2fd);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Center Card */
+.home-card {
+  background: white;
+  padding: 60px 80px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Heading */
+.home-card h1 {
+  color: #0d47a1;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Subtle animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .home-card {
+    width: 90%;
+    padding: 40px 20px;
+  }
+
+  .home-card h1 {
+    font-size: 1.8rem;
+  }
+}
